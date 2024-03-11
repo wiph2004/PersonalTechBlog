@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
     const comments = commentData.map((comment) => comment.get({ plain: true }));
 
-    res.render('main', { 
+    res.render('homepage', { 
       comments, 
       logged_in: req.session.logged_in 
     });
