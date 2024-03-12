@@ -32,6 +32,7 @@ const delButtonHandler = async (event) => {
     });
 
     if (response.ok) {
+      window.location.reload();
       document.location.replace('/profile');
     } else {
       alert('Failed to delete comment');
