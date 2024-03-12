@@ -11,10 +11,11 @@ const newFormHandler = async (event) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      
+
     });
 
     if (response.ok) {
+      window.location.reload();
       return ;
     } else {
       alert('Failed to create comment');
